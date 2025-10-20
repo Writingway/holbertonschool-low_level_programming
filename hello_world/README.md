@@ -1,2 +1,3 @@
 # holbertonschool-low_level_programming
-Learning C programming language
+
+Hello World directory
