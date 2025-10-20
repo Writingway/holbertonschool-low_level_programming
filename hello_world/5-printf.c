@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: 'Output must be with puts'
+ * Description: 'Output must be with printf'
  * Return: Always 0 (Success)
 */
 int main(void)
