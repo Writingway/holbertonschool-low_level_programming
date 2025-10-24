@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * jack_bauer - check if is lower
  * Return: Always 0.
