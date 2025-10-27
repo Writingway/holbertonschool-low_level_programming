@@ -11,7 +11,7 @@ void more_numbers(void)
 	int turn = 10;
 	char number = 14;
 
-	for (turn = 0; turn <= 10; turn++)
+	for (turn = 1; turn <= 10; turn++)
 	{
 		for (number = 0; number <= 14; number++)
 		{
