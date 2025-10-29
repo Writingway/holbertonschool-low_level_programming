@@ -20,14 +20,14 @@ void puts_half(char *str)
 
 	if (len % 2 == 0)
 	{
-		for (i = len - 1; str[i] > len; i++)
+		for (i = len - 1; str[i] >= len; i++)
 		{
 			_putchar(str[i]);
 		}
 	}
 	else if (len % 2)
 	{
-		for (i = (len + 1) / 2; str[i] > len; i++)
+		for (i = (len + 1) / 2; str[i] >= len; i++)
 		{
 			_putchar(str[i]);
 		}
