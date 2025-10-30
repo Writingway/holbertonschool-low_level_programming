@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strncat - check the code
+ * _strncat - concatenates two string
  *@dest: destination
  *@src: source
  *@n: n bytes
