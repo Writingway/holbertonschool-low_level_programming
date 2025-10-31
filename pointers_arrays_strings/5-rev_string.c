@@ -7,12 +7,6 @@
  */
 void rev_string(char *s)
 {
-	/*
-	*Pour s[count] j'ai le nombre de caratere
-	*	avoir mon premier et derniere carateres
-	*	Diviser ma longueur par 2
-	*	Puis swap dans tmp
-	*/
 
 	int count = 0;
 	int i;
