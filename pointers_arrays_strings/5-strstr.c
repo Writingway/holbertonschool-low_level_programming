@@ -9,27 +9,29 @@
  */
 
 /*haystack = "hello, world"*/
-/* needle = "world"*/
+/*needle = "world"*/
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j;
+	int i;
+	int j;
+
+	if (*needle == '\0')
+		return (haystack);
 
 	for (i = 0; haystack[i] != '\0'; i++)
 	{
-		if (haystack[i] == *needle)
+		for (j = 0; needle[j] != '\0'; j++)
 		{
-			for (j = 0; needle[j] != '\0'; j++)
+			if (haystack[j + i] != needle[j])
 			{
-				if (haystack[i] == needle[j])
-				{
-					return (haystack + i);
-				}
-				else
-					return (NULL);
+				break;
 			}
 		}
+		if (needle[j] == '\0')
+		{
+			return (haystack + i);
+		}
 	}
-
-	return ('\0');
+	return (NULL);
 }
