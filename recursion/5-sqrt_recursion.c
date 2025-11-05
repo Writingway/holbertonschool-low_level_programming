@@ -18,7 +18,7 @@ int _sqrt_recursion_helper(int n, int i)
 /**
  * _sqrt_recursion - print a string
  * @n: int args
- * Return: On success 1. 
+ * Return: On success 1.
 **/
 int _sqrt_recursion(int n)
 {
