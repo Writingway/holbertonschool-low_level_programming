@@ -10,35 +10,26 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int i = 0;
-	unsigned int j = 0;
-	unsigned int k = 0;
-	int **grid;
+	unsigned int totalSize = 0;
+	void *newPtr;
 
-	if (size == 0)
+	if (size == 0 || nmemb == 0)
 		return (NULL);
 
-	grid = malloc(nmemb * sizeof(int *));
+	totalSize = nmemb * size;
 
-	if (grid == NULL)
+	if (nmemb != 0 && totalSize / nmemb != size)
 		return (NULL);
 
-	for (i = 0; i < size; i++)
+	newPtr = malloc(totalSize);
+
+	if (newPtr == NULL)
+		return (NULL);
+
+	for (i = 0; i < totalSize; i++)
 	{
-		grid[i] = malloc(nmemb * sizeof(int));
-		if (grid[i] == NULL)
-		{
-			for (k = 0; k < i; k++)
-			{
-				free(grid[k]);
-			}
-			free(grid);
-			return (NULL);
-		}
-		for (j = 0; j < size; j++)
-		{
-			grid[i][j] = 0;
-		}
+		((char *)newPtr)[i] = 0;
 	}
 
-	return (grid);
+	return (newPtr);
 }
