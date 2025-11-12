@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 /**
- * malloc_checked - prints buffer in hexa
- * @b: pointer to char
+ * malloc_checked - check the allocation
+ * @b: unsigned int
  * Return: Nothing.
  */
 void *malloc_checked(unsigned int b)
