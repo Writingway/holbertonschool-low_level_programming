@@ -1,0 +1,3 @@
+# holbertonschool-low_level_programming
+
+structure_typedef
