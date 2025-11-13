@@ -33,6 +33,6 @@ void print_dog(struct dog *d)
 		return;
 	}
 	else
-		printf("Owner: %s\n", d->name);
+		printf("Owner: %s\n", d->owner);
 
 }
