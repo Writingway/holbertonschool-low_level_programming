@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "dog.h"
 #include <stdlib.h>
-
 /**
  * new_dog - check the allocation
  * @name: pointer
@@ -9,12 +8,14 @@
  * @owner: pointer
  * Return: Nothing.
 */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	int i = 0, j = 0;
 	char *newName, *newOwner;
 	dog_t *tmp = malloc(sizeof(dog_t));
+
+    if (name == NULL || owner == NULL)
+        return (NULL);
 
 	if (tmp == NULL)
 		return (NULL);
