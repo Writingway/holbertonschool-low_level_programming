@@ -1,6 +1,6 @@
+#include "3-calc.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "3-calc.h"
 
 /**
  * main - main
@@ -9,11 +9,10 @@
  * Return: main.
  */
 
-int (*f)(int a, int b);
-
 int main(int argc, char *argv[])
 {
 	int newNum, newNum2, result;
+	int (*f)(int a, int b);
 
 	if (argc != 4)
 	{
