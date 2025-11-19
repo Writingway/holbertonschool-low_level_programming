@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 	newNum = atoi(argv[1]);
 	newNum2 = atoi(argv[3]);
 
-	if ((argv[2][0] == '/' && newNum == 0) || (argv[2][0] == '%' && newNum2 == 0))
+	if ((argv[2][0] == '/' || argv[2][0] == '%') && newNum2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
