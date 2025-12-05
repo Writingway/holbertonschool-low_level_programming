@@ -72,7 +72,7 @@ int main(int ac, char **av)
 	int fd_from, fd_to;
 
 	if (ac != 3)
-		print_error(97, "Usage: cp %s %s\n", av[0]);
+		print_error(97, "Usage: cp file_from file_to\n", "");
 
 	fd_from = open(av[1], O_RDONLY);
 	if (fd_from == -1)
